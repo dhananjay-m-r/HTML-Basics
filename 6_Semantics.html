@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Semantics</title>
+    </head>
+
+    <body>
+        <style text="text/css">
+            header
+            {
+                background-color: bisque;
+            }
+        </style>
+
+        <header>
+            <h1>Page Heading</h1>
+        </header>
+
+        <h1>Input tags</h1>
+        <form action="x.value=parseINT(a.value)+parseINT(b.value)">
+            <p>Color Input:</p>
+            <input type="color" name="color">
+
+            <br>
+
+            <p>Data input:</p>
+            <input type="date">
+            <input type="month">
+
+            <p>Datalist (dropdown):</p>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="IE">IE</option>
+                <option value="Chrome">Chrome</option>
+            </datalist>
+
+            <br>
+
+            <p>Basic Addition:</p>
+            <input type="number" value="5" id="a">
+            <input type="number" value="6" id="b">
+            <output name="x" id="x" for="a b"></output>
+            <input type="submit">
+        </form>
+    </body>
+</html>
